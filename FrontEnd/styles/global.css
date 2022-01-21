@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 100;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60%;
+
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  font-size: 5vmin;
+  font-weight: bold;
+}
+.active {
+  color: #fc036b;
+  font-weight: bold;
+}
+
+/*  Navbar */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+header {
+  /* margin-top: 18%; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/saint.jpg");
+}
+
+.header-content {
+  margin-top: 15%;
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: #fc036b;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: #fc036b;
+  border-radius: 30px;
+  color: whitesmoke;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+/* Mobile device */
+
+@media only screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #484872;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+
+  .nav-links li {
+    margin: 30px auto;
+  }
+}
+
+/* Events */
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #49497e;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.events .row {
+  margin-top: 50px;
+}
+h4 {
+  font-size: 3vmin;
+  color: #484872;
+  margin: 20px auto;
+}
+
+p {
+  color: #7c7c7c;
+  padding: 0px 40px;
+}
+
+.events .ctn {
+  margin-top: 100px;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+table {
+  border-collapse: collapse;
+
+  border-spacing: 0;
+}
+
+/*css 초기화*/
+
+.card {
+  height: auto;
+
+  width: 95%;
+
+  border-radius: 15px;
+
+  display: inline-block;
+
+  margin-top: 30px;
+
+  margin-left: 30px;
+
+  margin-bottom: 30px;
+
+  position: relative;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.card-header {
+  -webkit-transition: 0.5s; /*사파리 & 크롬*/
+
+  -moz-transition: 0.5s; /*파이어폭스*/
+
+  -ms-transition: 0.5s; /*인터넷 익스플로러*/
+
+  -o-transition: 0.5s; /*오페라*/
+
+  transition: 0.5s;
+
+  width: 100%;
+
+  height: 10px;
+
+  border-radius: 15px 15px 0 0;
+
+  background-image: url("../public/jaya.jpg");
+
+  background-size: 100% 280px;
+
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+.card-header-is_closed {
+  background-color: #ef5a31;
+
+  color: #fff;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  float: right;
+
+  margin: 15px 15px 0 0;
+
+  border-radius: 50%;
+
+  font-weight: bold;
+
+  padding: 10px 10px;
+
+  line-height: 20px;
+}
+
+/* h1 {
+  font-size: 22px;
+
+  font-weight: bold;
+} */
+
+.card-body {
+}
+
+.card-body-header {
+  line-height: 25px;
+
+  margin: 10px 20px 0px 20px;
+}
+
+.card-body-description {
+  opacity: 0;
+
+  color: #757b82;
+
+  line-height: 25px;
+
+  -webkit-transition: 0.2s ease-in-out; /*사파리&크롬*/
+
+  -moz-transition: 0.2s ease-in-out; /*파이어폭스*/
+
+  -ms-transition: 0.2s ease-in-out; /*익스플로러*/
+
+  -o-transition: 0.2s ease-in-out; /*오페라*/
+
+  transition: 0.2s ease-in-out;
+
+  overflow: hidden;
+
+  margin: 5px 20px;
+}
+
+.card-body-description:hover {
+  opacity: 1;
+
+  -webkit-transition: 0.5s ease-in-out;
+
+  -moz-transition: 0.5s ease-in-out;
+
+  -ms-transition: 0.5s ease-in-out;
+
+  -o-transition: 0.5s ease-in-out;
+
+  transition: 0.5s ease-in-out;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-body-hashtag {
+  color: #2478ff;
+
+  font-style: italic;
+}
+
+.card-body-footer {
+  position: relative;
+
+  margin-top: 5px;
+
+  margin-bottom: 10px;
+
+  bottom: 0;
+
+  width: 314px;
+
+  font-size: 14px;
+
+  color: #9fa5a8;
+
+  padding: 0 15px;
+}
+
+/* .icon {
+  display: inline-block;
+
+  vertical-align: middle;
+
+  margin-right: 2px;
+}
+
+.icon-view_count {
+  width: 25px;
+
+  height: 17px;
+
+  background: url("../public/jaya.jpg") no-repeat;
+}
+
+.icon-comments_count {
+  margin-left: 5px;
+
+  width: 25px;
+
+  height: 17px;
+
+  background: url("../public/jaya.jpg") no-repeat;
+} */
+
+.reg_date {
+  float: right;
+}
+
+.Welcome_User {
+  width: 100%;
+  height: 899px;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  background: #000;
+  margin: 0 auto;
+  text-align: center;
+}
+.card-body {
+  margin: 250px 0px;
+}
+
+input {
+  width: 300px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+input[type="text"] {
+  border: solid 2px #d2691e;
+  border-radius: 8px;
+}
+input[type="email"] {
+  border: solid 2px #d2691e;
+  border-radius: 8px;
+}
+input[type="password"] {
+  border: solid 2px #d2691e;
+  border-radius: 8px;
+}
+
+li,
+a,
+button {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #edf0f1;
+  text-decoration: none;
+}
